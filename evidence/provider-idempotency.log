@@ -1,0 +1,15 @@
+2026-11-25T17:16:35Z R13_PROOF
+
+> t2-job-queue@1.0.0 test
+> vitest run tests/provider-idempotency.test.ts
+
+
+ RUN  v3.2.7 /Users/leksyd/Desktop/5 build/t2-job-queue
+
+ ✓ tests/provider-idempotency.test.ts (1 test) 34ms
+
+ Test Files  1 passed (1)
+      Tests  1 passed (1)
+   Start at  18:16:35
+   Duration  377ms (transform 44ms, setup 0ms, collect 68ms, tests 34ms, environment 0ms, prepare 64ms)
+

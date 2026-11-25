@@ -1,0 +1,36 @@
+2026-11-25T17:17:12Z SCHEMA
+                                    Table "public.jobs"
+     Column      |           Type           | Collation | Nullable |        Default        
+-----------------+--------------------------+-----------+----------+-----------------------
+ id              | uuid                     |           | not null | 
+ type            | text                     |           | not null | 
+ payload         | jsonb                    |           | not null | '{}'::jsonb
+ status          | job_status               |           | not null | 'pending'::job_status
+ attempts        | integer                  |           | not null | 0
+ max_attempts    | integer                  |           | not null | 5
+ last_error      | text                     |           |          | 
+ run_at          | timestamp with time zone |           | not null | now()
+ started_at      | timestamp with time zone |           |          | 
+ finished_at     | timestamp with time zone |           |          | 
+ idempotency_key | text                     |           | not null | 
+ created_at      | timestamp with time zone |           | not null | now()
+ updated_at      | timestamp with time zone |           | not null | now()
+Indexes:
+    "jobs_pkey" PRIMARY KEY, btree (id)
+    "idx_jobs_claim" btree (run_at) WHERE status = ANY (ARRAY['pending'::job_status, 'failed'::job_status])
+    "idx_jobs_created_at" btree (created_at DESC)
+    "idx_jobs_status" btree (status)
+    "idx_jobs_stuck_sweep" btree (started_at) WHERE status = 'processing'::job_status
+    "jobs_idempotency_key_key" UNIQUE CONSTRAINT, btree (idempotency_key)
+
+                          Table "public.provider_sends"
+       Column        |           Type           | Collation | Nullable | Default 
+---------------------+--------------------------+-----------+----------+---------
+ idempotency_key     | text                     |           | not null | 
+ provider_message_id | text                     |           | not null | 
+ recipient           | text                     |           | not null | 
+ created_at          | timestamp with time zone |           | not null | now()
+Indexes:
+    "provider_sends_pkey" PRIMARY KEY, btree (idempotency_key)
+    "idx_provider_sends_created_at" btree (created_at DESC)
+

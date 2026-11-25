@@ -1,0 +1,8 @@
+2026-11-25T17:14:34Z BEFORE_KILL
+c8bdb797-a6a5-4731-a1dd-ec3f4efccffe | processing | attempts=1 | started_at=2026-11-25 18:14:22.059234+01
+2026-11-25T17:14:55Z AFTER_KILL
+c8bdb797-a6a5-4731-a1dd-ec3f4efccffe | processing | attempts=1 | started_at=2026-11-25 18:14:22.059234+01
+2026-11-25T17:15:25Z AFTER_SWEEP
+c8bdb797-a6a5-4731-a1dd-ec3f4efccffe | pending | attempts=2 | run_at=2026-11-25 18:15:17.231704+01
+2026-11-25T17:15:49Z AFTER_WORKER_RESTART
+c8bdb797-a6a5-4731-a1dd-ec3f4efccffe | succeeded | attempts=2

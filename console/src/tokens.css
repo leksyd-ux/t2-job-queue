@@ -1,0 +1,157 @@
+/* =============================================================
+   tokens.css — shared design tokens for the Five Engineering Tasks
+   Rule: components consume tokens, never raw hex values.
+   Contrast pairs in this file were checked against WCAG AA.
+   Copy this file into each UI project (T1 consumer, T2 console).
+   Apply a theme with <html data-theme="basil"> or "console".
+   ============================================================= */
+
+:root {
+  /* ---------- Type ---------- */
+  --font-sans: "Hanken Grotesk", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-display: "Bricolage Grotesque", var(--font-sans);
+  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  /* Scale: ratio 1.25, base 16px */
+  --text-xs: 0.75rem;    /* 12 */
+  --text-sm: 0.875rem;   /* 14 */
+  --text-base: 1rem;     /* 16 */
+  --text-lg: 1.25rem;    /* 20 */
+  --text-xl: 1.5625rem;  /* 25 */
+  --text-2xl: 1.953rem;  /* 31 */
+  --text-3xl: 2.441rem;  /* 39 */
+  --leading-body: 1.55;
+  --leading-tight: 1.2;
+
+  /* ---------- Spacing (4px base) ---------- */
+  --space-1: 4px;  --space-2: 8px;  --space-3: 12px; --space-4: 16px;
+  --space-5: 24px; --space-6: 32px; --space-7: 48px; --space-8: 64px;
+
+  /* ---------- Radius: three only. Hierarchy, not uniformity ---------- */
+  --radius-sm: 6px;    /* inputs, badges */
+  --radius-md: 10px;   /* buttons, list rows */
+  --radius-lg: 16px;   /* panels, sheets */
+
+  /* ---------- Motion ---------- */
+  --dur-fast: 120ms; --dur-base: 200ms; --dur-slow: 320ms;
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --ease-decel: cubic-bezier(0, 0, 0, 1);
+  --ease-accel: cubic-bezier(0.3, 0, 1, 1);
+
+  /* ---------- Layout ---------- */
+  --content-max: 72rem;
+  --reading-max: 68ch;
+  --touch-min: 44px;
+}
+
+/* =============================================================
+   THEME A — "basil" (Task 1 consumer app). Light first.
+   Verified: text/bg 16.5:1, muted/bg 7.0:1, white on accent 5.3:1,
+   accent on white 5.3:1, danger on white 6.6:1, warn text on white 5.9:1
+   ============================================================= */
+[data-theme="basil"] {
+  --color-bg: #F6F7F9;
+  --color-surface: #FFFFFF;
+  --color-surface-sunken: #EEF0F4;
+  --color-border: #DCE0E7;
+  --color-text: #121826;
+  --color-text-muted: #4B5565;
+  --color-accent: #0B7A5C;
+  --color-accent-hover: #08604A;
+  --color-accent-contrast: #FFFFFF;
+  --color-accent-soft: #DDF3EB;
+  --color-highlight: #F5B83D;          /* saffron fill, always pair with ink text */
+  --color-highlight-contrast: #121826; /* 10.0:1 */
+  --color-warning-text: #8A5A00;
+  --color-danger: #B42318;
+  --color-danger-soft: #FDECEA;
+  --color-focus-ring: #2848C9;
+  --shadow-1: 0 1px 2px rgb(18 24 38 / 0.06);
+  --shadow-2: 0 4px 12px rgb(18 24 38 / 0.08);
+  --shadow-3: 0 12px 32px rgb(18 24 38 / 0.12);
+}
+@media (prefers-color-scheme: dark) {
+  [data-theme="basil"]:not([data-mode="light"]) {
+    --color-bg: #0F1218;
+    --color-surface: #161A22;
+    --color-surface-sunken: #0B0E13;
+    --color-border: #2A303C;
+    --color-text: #E8EBF1;
+    --color-text-muted: #9AA3B2;
+    --color-accent: #3DD68C;
+    --color-accent-hover: #6AE3A8;
+    --color-accent-contrast: #0F1218;
+    --color-accent-soft: #14352A;
+    --color-highlight: #F5B83D;
+    --color-warning-text: #F5B83D;
+    --color-danger: #FF6B7A;
+    --color-danger-soft: #3A1A1F;
+    --color-focus-ring: #7B8CFF;
+    --shadow-1: none; --shadow-2: none; --shadow-3: 0 12px 32px rgb(0 0 0 / 0.5);
+  }
+}
+
+/* =============================================================
+   THEME B — "console" (Task 2 jobs console). Dark first, light supported.
+   Dark verified: text 15.7:1, muted 6.9:1 on surface, accent 6.3:1,
+   processing 7.1, succeeded 9.3, failed 9.8, dead 6.3 (all on surface)
+   ============================================================= */
+[data-theme="console"] {
+  --color-bg: #0F1218;
+  --color-surface: #161A22;
+  --color-surface-raised: #1D222C;
+  --color-border: #2A303C;
+  --color-text: #E8EBF1;
+  --color-text-muted: #9AA3B2;
+  --color-accent: #7B8CFF;
+  --color-accent-contrast: #0F1218;
+  --color-focus-ring: #7B8CFF;
+
+  /* Job lifecycle. Color is never alone: always pair with icon + label. */
+  --status-pending: #9AA3B2;
+  --status-processing: #5AA9FF;
+  --status-succeeded: #3DD68C;
+  --status-failed: #F5B83D;   /* will retry */
+  --status-dead: #FF6B7A;     /* needs a human */
+
+  /* Badge fills derived from the status colors; text stays in the status color.
+     Measured text-on-fill contrast: 5.21 to 7.37 (all above 4.5:1). */
+  --status-pending-soft: color-mix(in srgb, var(--status-pending) 14%, var(--color-surface));
+  --status-processing-soft: color-mix(in srgb, var(--status-processing) 14%, var(--color-surface));
+  --status-succeeded-soft: color-mix(in srgb, var(--status-succeeded) 14%, var(--color-surface));
+  --status-failed-soft: color-mix(in srgb, var(--status-failed) 14%, var(--color-surface));
+  --status-dead-soft: color-mix(in srgb, var(--status-dead) 14%, var(--color-surface));
+}
+@media (prefers-color-scheme: light) {
+  [data-theme="console"]:not([data-mode="dark"]) {
+    --color-bg: #F6F7F9;
+    --color-surface: #FFFFFF;
+    --color-surface-raised: #FFFFFF;
+    --color-border: #DCE0E7;
+    --color-text: #121826;
+    --color-text-muted: #4B5565;
+    --color-accent: #2848C9;
+    --color-accent-contrast: #FFFFFF;
+    --color-focus-ring: #2848C9;
+    --status-pending: #4B5565;
+    --status-processing: #0B5CAD;
+    --status-succeeded: #1F6F43;
+    --status-failed: #8A5A00;
+    --status-dead: #B42318;
+  }
+}
+
+/* =============================================================
+   Accessibility baseline. Do not remove.
+   ============================================================= */
+:where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+  outline: 2px solid var(--color-focus-ring);
+  outline-offset: 2px;
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

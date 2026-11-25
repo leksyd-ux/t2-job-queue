@@ -1,0 +1,18 @@
+
+> t2-job-queue@1.0.0 break:failure
+> tsx scripts/break-failure.ts
+
+==================================================
+BREAK-IT 2: FAILURE LIFECYCLE & EXPONENTIAL BACKOFF
+Proving: pending -> processing -> failed (with backoff) -> ... -> dead
+==================================================
+Enqueuing intentionally failing job with key: failing_job_1795626774775...
+Job enqueued with ID: 01a213b2-3118-767e-89e7-e1d6fd8d3216. Monitoring state transitions...
+Transition: Status='pending' | Attempts=0/3 | LastError='none' | RunAt=2026-11-25T17:12:54.809Z
+Transition: Status='failed' | Attempts=1/3 | LastError='Simulated intentional job failure (force_fail = true)' | RunAt=2026-11-25T17:12:58.933Z
+Transition: Status='failed' | Attempts=2/3 | LastError='Simulated intentional job failure (force_fail = true)' | RunAt=2026-11-25T17:13:04.353Z
+Transition: Status='dead' | Attempts=3/3 | LastError='Simulated intentional job failure (force_fail = true)' | RunAt=2026-11-25T17:13:04.988Z
+==================================================
+✅ PASS: Job successfully exhausted retries and transitioned to 'dead'.
+Final Error Recorded: Simulated intentional job failure (force_fail = true)
+==================================================

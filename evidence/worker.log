@@ -1,0 +1,392 @@
+
+> t2-job-queue@1.0.0 dev:worker
+> tsx watch src/worker/index.ts
+
+🚀 Background Worker started. Concurrency Cap: 5 | Poll Interval: 1000ms
+[Worker] Claimed 1 job(s). Starting concurrent processing...
+[Worker] ⏳ Processing job 01a2139a-a86c-754f-89f1-94b1b0f125f2 | Active slots: 1/5
+[Worker] ⚠️ Job 01a2139a-a86c-754f-89f1-94b1b0f125f2 attempt 1/5 failed. Status: 'failed'. Scheduled retry at: 2026-11-25T16:47:15.421Z. Error: Simulated intentional job failure (force_fail = true)
+[Worker] Claimed 1 job(s). Starting concurrent processing...
+[Worker] ⏳ Processing job 01a2139a-a86c-754f-89f1-94b1b0f125f2 | Active slots: 1/5
+[Worker] ⚠️ Job 01a2139a-a86c-754f-89f1-94b1b0f125f2 attempt 2/5 failed. Status: 'failed'. Scheduled retry at: 2026-11-25T16:47:20.142Z. Error: Simulated intentional job failure (force_fail = true)
+[Worker] Claimed 1 job(s). Starting concurrent processing...
+[Worker] ⏳ Processing job 01a2139a-a86c-754f-89f1-94b1b0f125f2 | Active slots: 1/5
+[Worker] ⚠️ Job 01a2139a-a86c-754f-89f1-94b1b0f125f2 attempt 3/5 failed. Status: 'failed'. Scheduled retry at: 2026-11-25T16:47:29.413Z. Error: Simulated intentional job failure (force_fail = true)
+[Worker] Claimed 1 job(s). Starting concurrent processing...
+[Worker] ⏳ Processing job 01a2139a-a86c-754f-89f1-94b1b0f125f2 | Active slots: 1/5
+[Worker] ⚠️ Job 01a2139a-a86c-754f-89f1-94b1b0f125f2 attempt 4/5 failed. Status: 'failed'. Scheduled retry at: 2026-11-25T16:47:46.539Z. Error: Simulated intentional job failure (force_fail = true)
+[Worker] Claimed 1 job(s). Starting concurrent processing...
+[Worker] ⏳ Processing job 01a2139a-a86c-754f-89f1-94b1b0f125f2 | Active slots: 1/5
+[Worker] 💀 Job 01a2139a-a86c-754f-89f1-94b1b0f125f2 exhausted all 5 attempts. Moved to DEAD LETTER queue. Error: Simulated intentional job failure (force_fail = true)
+[Worker] Claimed 1 job(s). Starting concurrent processing...
+[Worker] ⏳ Processing job 01a2139c-9934-77ff-855b-46eca08947aa | Active slots: 1/5
+[Worker] ⚠️ Job 01a2139c-9934-77ff-855b-46eca08947aa attempt 1/5 failed. Status: 'failed'. Scheduled retry at: 2026-11-25T16:49:22.695Z. Error: Simulated intentional job failure (force_fail = true)
+[Worker] Claimed 1 job(s). Starting concurrent processing...
+[Worker] ⏳ Processing job 01a2139c-9934-77ff-855b-46eca08947aa | Active slots: 1/5
+[Worker] ⚠️ Job 01a2139c-9934-77ff-855b-46eca08947aa attempt 2/5 failed. Status: 'failed'. Scheduled retry at: 2026-11-25T16:49:27.984Z. Error: Simulated intentional job failure (force_fail = true)
+[Worker] Claimed 1 job(s). Starting concurrent processing...
+[Worker] ⏳ Processing job 01a2139c-9934-77ff-855b-46eca08947aa | Active slots: 1/5
+[Worker] ⚠️ Job 01a2139c-9934-77ff-855b-46eca08947aa attempt 3/5 failed. Status: 'failed'. Scheduled retry at: 2026-11-25T16:49:36.831Z. Error: Simulated intentional job failure (force_fail = true)
+[Worker] Claimed 1 job(s). Starting concurrent processing...
+[Worker] ⏳ Processing job 01a2139c-9934-77ff-855b-46eca08947aa | Active slots: 1/5
+[Worker] ⚠️ Job 01a2139c-9934-77ff-855b-46eca08947aa attempt 4/5 failed. Status: 'failed'. Scheduled retry at: 2026-11-25T16:49:53.702Z. Error: Simulated intentional job failure (force_fail = true)
+[Worker] Claimed 1 job(s). Starting concurrent processing...
+[Worker] ⏳ Processing job 01a2139c-9934-77ff-855b-46eca08947aa | Active slots: 1/5
+[Worker] 💀 Job 01a2139c-9934-77ff-855b-46eca08947aa exhausted all 5 attempts. Moved to DEAD LETTER queue. Error: Simulated intentional job failure (force_fail = true)
+[Worker] Claimed 1 job(s). Starting concurrent processing...
+[Worker] ⏳ Processing job 01a2139c-9934-77ff-855b-46eca08947aa | Active slots: 1/5
+[Worker] ⚠️ Job 01a2139c-9934-77ff-855b-46eca08947aa attempt 1/5 failed. Status: 'failed'. Scheduled retry at: 2026-11-25T16:53:58.611Z. Error: Simulated intentional job failure (force_fail = true)
+[Worker] Claimed 1 job(s). Starting concurrent processing...
+[Worker] ⏳ Processing job 01a2139c-9934-77ff-855b-46eca08947aa | Active slots: 1/5
+[Worker] ⚠️ Job 01a2139c-9934-77ff-855b-46eca08947aa attempt 2/5 failed. Status: 'failed'. Scheduled retry at: 2026-11-25T16:54:03.915Z. Error: Simulated intentional job failure (force_fail = true)
+[Worker] Claimed 2 job(s). Starting concurrent processing...
+[Worker] ⏳ Processing job 01a2139c-9934-77ff-855b-46eca08947aa | Active slots: 1/5
+[Worker] ⏳ Processing job 01a2139a-a86c-754f-89f1-94b1b0f125f2 | Active slots: 2/5
+[Worker] ⚠️ Job 01a2139a-a86c-754f-89f1-94b1b0f125f2 attempt 1/5 failed. Status: 'failed'. Scheduled retry at: 2026-11-25T16:54:06.815Z. Error: Simulated intentional job failure (force_fail = true)
+[Worker] ⚠️ Job 01a2139c-9934-77ff-855b-46eca08947aa attempt 3/5 failed. Status: 'failed'. Scheduled retry at: 2026-11-25T16:54:12.872Z. Error: Simulated intentional job failure (force_fail = true)
+[Worker] Claimed 1 job(s). Starting concurrent processing...
+[Worker] ⏳ Processing job 01a2139a-a86c-754f-89f1-94b1b0f125f2 | Active slots: 1/5
+[Worker] ⚠️ Job 01a2139a-a86c-754f-89f1-94b1b0f125f2 attempt 2/5 failed. Status: 'failed'. Scheduled retry at: 2026-11-25T16:54:11.547Z. Error: Simulated intentional job failure (force_fail = true)
+[Worker] Claimed 1 job(s). Starting concurrent processing...
+[Worker] ⏳ Processing job 01a2139a-a86c-754f-89f1-94b1b0f125f2 | Active slots: 1/5
+[Worker] ⚠️ Job 01a2139a-a86c-754f-89f1-94b1b0f125f2 attempt 3/5 failed. Status: 'failed'. Scheduled retry at: 2026-11-25T16:54:20.804Z. Error: Simulated intentional job failure (force_fail = true)
+[Worker] Claimed 1 job(s). Starting concurrent processing...
+[Worker] ⏳ Processing job 01a2139c-9934-77ff-855b-46eca08947aa | Active slots: 1/5
+[Worker] ⚠️ Job 01a2139c-9934-77ff-855b-46eca08947aa attempt 4/5 failed. Status: 'failed'. Scheduled retry at: 2026-11-25T16:54:29.715Z. Error: Simulated intentional job failure (force_fail = true)
+[Worker] Claimed 1 job(s). Starting concurrent processing...
+[Worker] ⏳ Processing job 01a2139a-a86c-754f-89f1-94b1b0f125f2 | Active slots: 1/5
+[Worker] ⚠️ Job 01a2139a-a86c-754f-89f1-94b1b0f125f2 attempt 4/5 failed. Status: 'failed'. Scheduled retry at: 2026-11-25T16:54:37.902Z. Error: Simulated intentional job failure (force_fail = true)
+[Worker] Claimed 1 job(s). Starting concurrent processing...
+[Worker] ⏳ Processing job 01a2139c-9934-77ff-855b-46eca08947aa | Active slots: 1/5
+[Worker] 💀 Job 01a2139c-9934-77ff-855b-46eca08947aa exhausted all 5 attempts. Moved to DEAD LETTER queue. Error: Simulated intentional job failure (force_fail = true)
+[Worker] Claimed 1 job(s). Starting concurrent processing...
+[Worker] ⏳ Processing job 01a2139a-a86c-754f-89f1-94b1b0f125f2 | Active slots: 1/5
+[Worker] 💀 Job 01a2139a-a86c-754f-89f1-94b1b0f125f2 exhausted all 5 attempts. Moved to DEAD LETTER queue. Error: Simulated intentional job failure (force_fail = true)
+[Worker] Claimed 5 job(s). Starting concurrent processing...
+[Worker] ⏳ Processing job 01a213a4-ee22-720d-a4e1-39f9335388ef | Active slots: 1/5
+[Worker] ⏳ Processing job 01a213a4-ee0e-7553-b8cf-6999861942b0 | Active slots: 2/5
+[Worker] ⏳ Processing job 01a213a4-ee0e-7553-b8cf-6ee2c34e4099 | Active slots: 3/5
+[Worker] ⏳ Processing job 01a213a4-ee1d-7648-a716-6952afcd9fc5 | Active slots: 4/5
+[Worker] ⏳ Processing job 01a213a4-ee0f-7199-96d5-56c5091b3c52 | Active slots: 5/5
+[Worker] ✅ Job 01a213a4-ee0f-7199-96d5-56c5091b3c52 (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213a4-ee1d-7648-a716-6952afcd9fc5 (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213a4-ee0e-7553-b8cf-6ee2c34e4099 (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213a4-ee22-720d-a4e1-39f9335388ef (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213a4-ee0e-7553-b8cf-6999861942b0 (send_welcome_email) succeeded.
+[Worker] Claimed 5 job(s). Starting concurrent processing...
+[Worker] ⏳ Processing job 01a213a4-ee0f-7199-96d5-5ea6844c6628 | Active slots: 1/5
+[Worker] ⏳ Processing job 01a213a4-ee23-70de-8547-38ce9e50a1da | Active slots: 2/5
+[Worker] ⏳ Processing job 01a213a4-ee25-70ea-978b-0bb71641daa8 | Active slots: 3/5
+[Worker] ⏳ Processing job 01a213a4-ee0f-7199-96d5-50ac0c71bdf4 | Active slots: 4/5
+[Worker] ⏳ Processing job 01a213a4-ee0f-7199-96d5-5b7961c50d74 | Active slots: 5/5
+[Worker] ✅ Job 01a213a4-ee25-70ea-978b-0bb71641daa8 (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213a4-ee0f-7199-96d5-5b7961c50d74 (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213a4-ee23-70de-8547-38ce9e50a1da (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213a4-ee0f-7199-96d5-5ea6844c6628 (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213a4-ee0f-7199-96d5-50ac0c71bdf4 (send_welcome_email) succeeded.
+[Worker] Claimed 5 job(s). Starting concurrent processing...
+[Worker] ⏳ Processing job 01a213a4-ee28-73fa-b33d-c45dde07d5f4 | Active slots: 1/5
+[Worker] ⏳ Processing job 01a213a4-ee26-764c-a1b1-409022a915db | Active slots: 2/5
+[Worker] ⏳ Processing job 01a213a4-ee26-764c-a1b1-3b2eea117893 | Active slots: 3/5
+[Worker] ⏳ Processing job 01a213a4-ee28-73fa-b33d-c8062a61b8f5 | Active slots: 4/5
+[Worker] ⏳ Processing job 01a213a4-ee26-764c-a1b1-3e75f3b7aa0b | Active slots: 5/5
+[Worker] ✅ Job 01a213a4-ee26-764c-a1b1-3b2eea117893 (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213a4-ee28-73fa-b33d-c45dde07d5f4 (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213a4-ee26-764c-a1b1-409022a915db (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213a4-ee26-764c-a1b1-3e75f3b7aa0b (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213a4-ee28-73fa-b33d-c8062a61b8f5 (send_welcome_email) succeeded.
+[Worker] Claimed 5 job(s). Starting concurrent processing...
+[Worker] ⏳ Processing job 01a213a4-ee29-768c-b797-1b2e5643761f | Active slots: 1/5
+[Worker] ⏳ Processing job 01a213a4-ee2c-70be-a40d-35e47b99286f | Active slots: 2/5
+[Worker] ⏳ Processing job 01a213a4-ee29-768c-b797-15c10d893ecf | Active slots: 3/5
+[Worker] ⏳ Processing job 01a213a4-ee2d-7188-8d13-7b5614efd038 | Active slots: 4/5
+[Worker] ⏳ Processing job 01a213a4-ee29-768c-b797-10257cd993dc | Active slots: 5/5
+[Worker] ✅ Job 01a213a4-ee2c-70be-a40d-35e47b99286f (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213a4-ee2d-7188-8d13-7b5614efd038 (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213a4-ee29-768c-b797-10257cd993dc (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213a4-ee29-768c-b797-1b2e5643761f (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213a4-ee29-768c-b797-15c10d893ecf (send_welcome_email) succeeded.
+[Worker] Claimed 5 job(s). Starting concurrent processing...
+[Worker] ⏳ Processing job 01a213a4-ee2f-71cd-8992-ef72d0d71513 | Active slots: 1/5
+[Worker] ⏳ Processing job 01a213a4-ee2e-7544-94cb-4352dcfc431a | Active slots: 2/5
+[Worker] ⏳ Processing job 01a213a4-ee2f-71cd-8992-f3ea2bebc5c3 | Active slots: 3/5
+[Worker] ⏳ Processing job 01a213a4-ee2e-7544-94cb-3ec4084fd88a | Active slots: 4/5
+[Worker] ⏳ Processing job 01a213a4-ee2e-7544-94cb-39fa9860bc5b | Active slots: 5/5
+[Worker] ✅ Job 01a213a4-ee2e-7544-94cb-39fa9860bc5b (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213a4-ee2f-71cd-8992-ef72d0d71513 (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213a4-ee2e-7544-94cb-3ec4084fd88a (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213a4-ee2f-71cd-8992-f3ea2bebc5c3 (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213a4-ee2e-7544-94cb-4352dcfc431a (send_welcome_email) succeeded.
+[Worker] Claimed 5 job(s). Starting concurrent processing...
+[Worker] ⏳ Processing job 01a213a4-ee31-76c8-9a4c-f710f3dbe9b1 | Active slots: 1/5
+[Worker] ⏳ Processing job 01a213a4-ee30-75fc-a3c9-6d981640aeaf | Active slots: 2/5
+[Worker] ⏳ Processing job 01a213a4-ee30-75fc-a3c9-6a6158b7e9b3 | Active slots: 3/5
+[Worker] ⏳ Processing job 01a213a4-ee30-75fc-a3c9-645b348ec6ac | Active slots: 4/5
+[Worker] ⏳ Processing job 01a213a4-ee2f-71cd-8992-f74c077e686b | Active slots: 5/5
+[Worker] ✅ Job 01a213a4-ee30-75fc-a3c9-6d981640aeaf (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213a4-ee2f-71cd-8992-f74c077e686b (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213a4-ee30-75fc-a3c9-645b348ec6ac (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213a4-ee30-75fc-a3c9-6a6158b7e9b3 (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213a4-ee31-76c8-9a4c-f710f3dbe9b1 (send_welcome_email) succeeded.
+[Worker] Claimed 5 job(s). Starting concurrent processing...
+[Worker] ⏳ Processing job 01a213a4-ee32-751b-a7cd-958270a0bbca | Active slots: 1/5
+[Worker] ⏳ Processing job 01a213a4-ee31-76c8-9a4c-f90254228083 | Active slots: 2/5
+[Worker] ⏳ Processing job 01a213a4-ee32-751b-a7cd-900737496259 | Active slots: 3/5
+[Worker] ⏳ Processing job 01a213a4-ee31-76c8-9a4c-ff27ecb8bee3 | Active slots: 4/5
+[Worker] ⏳ Processing job 01a213a4-ee31-76c8-9a4d-03adbfa83643 | Active slots: 5/5
+[Worker] ✅ Job 01a213a4-ee31-76c8-9a4d-03adbfa83643 (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213a4-ee31-76c8-9a4c-f90254228083 (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213a4-ee32-751b-a7cd-900737496259 (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213a4-ee31-76c8-9a4c-ff27ecb8bee3 (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213a4-ee32-751b-a7cd-958270a0bbca (send_welcome_email) succeeded.
+[Worker] Claimed 5 job(s). Starting concurrent processing...
+[Worker] ⏳ Processing job 01a213a4-ee33-7352-a92a-5c4197bf597d | Active slots: 1/5
+[Worker] ⏳ Processing job 01a213a4-ee34-718b-afd0-1277172896c7 | Active slots: 2/5
+[Worker] ⏳ Processing job 01a213a4-ee33-7352-a92a-62e68fc34741 | Active slots: 3/5
+[Worker] ⏳ Processing job 01a213a4-ee32-751b-a7cd-99767962ab7c | Active slots: 4/5
+[Worker] ⏳ Processing job 01a213a4-ee33-7352-a92a-58c40b55a0a3 | Active slots: 5/5
+[Worker] ✅ Job 01a213a4-ee33-7352-a92a-5c4197bf597d (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213a4-ee33-7352-a92a-58c40b55a0a3 (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213a4-ee32-751b-a7cd-99767962ab7c (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213a4-ee33-7352-a92a-62e68fc34741 (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213a4-ee34-718b-afd0-1277172896c7 (send_welcome_email) succeeded.
+[Worker] Claimed 5 job(s). Starting concurrent processing...
+[Worker] ⏳ Processing job 01a213a4-ee35-7089-9aa9-64e35c7e25fb | Active slots: 1/5
+[Worker] ⏳ Processing job 01a213a4-ee35-7089-9aa9-5cd7a8db8239 | Active slots: 2/5
+[Worker] ⏳ Processing job 01a213a4-ee35-7089-9aa9-5a3fccddce99 | Active slots: 3/5
+[Worker] ⏳ Processing job 01a213a4-ee35-7089-9aa9-629a543538a7 | Active slots: 4/5
+[Worker] ⏳ Processing job 01a213a4-ee34-718b-afd0-15246565013e | Active slots: 5/5
+[Worker] ✅ Job 01a213a4-ee35-7089-9aa9-5cd7a8db8239 (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213a4-ee35-7089-9aa9-5a3fccddce99 (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213a4-ee35-7089-9aa9-64e35c7e25fb (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213a4-ee34-718b-afd0-15246565013e (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213a4-ee35-7089-9aa9-629a543538a7 (send_welcome_email) succeeded.
+[Worker] Claimed 5 job(s). Starting concurrent processing...
+[Worker] ⏳ Processing job 01a213a4-ee36-7065-834d-cccbad45e192 | Active slots: 1/5
+[Worker] ⏳ Processing job 01a213a4-ee37-7445-ad25-95ec5c380f6e | Active slots: 2/5
+[Worker] ⏳ Processing job 01a213a4-ee37-7445-ad25-9859829a4283 | Active slots: 3/5
+[Worker] ⏳ Processing job 01a213a4-ee37-7445-ad25-90d45ca5d8be | Active slots: 4/5
+[Worker] ⏳ Processing job 01a213a4-ee36-7065-834d-c916d1af9d78 | Active slots: 5/5
+[Worker] ✅ Job 01a213a4-ee36-7065-834d-c916d1af9d78 (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213a4-ee37-7445-ad25-9859829a4283 (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213a4-ee37-7445-ad25-90d45ca5d8be (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213a4-ee36-7065-834d-cccbad45e192 (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213a4-ee37-7445-ad25-95ec5c380f6e (send_welcome_email) succeeded.
+[Worker] Claimed 1 job(s). Starting concurrent processing...
+[Worker] ⏳ Processing job 01a213a5-0c4e-74d9-b39d-a011616d96c0 | Active slots: 1/5
+[Worker] ✅ Job 01a213a5-0c4e-74d9-b39d-a011616d96c0 (send_welcome_email) succeeded.
+6:11:06 PM [tsx] change in ./src/worker/processor.ts Restarting...
+
+Received SIGTERM. Gracefully stopping worker...
+[Worker] Stopping worker poll loop. Draining active jobs...
+[Worker] Worker shutdown complete.
+🚀 Background Worker started. Concurrency Cap: 5 | Poll Interval: 1000ms
+6:11:17 PM [tsx] change in ./src/worker/processor.ts Restarting...
+
+Received SIGTERM. Gracefully stopping worker...
+[Worker] Stopping worker poll loop. Draining active jobs...
+[Worker] Worker shutdown complete.
+🚀 Background Worker started. Concurrency Cap: 5 | Poll Interval: 1000ms
+6:11:26 PM [tsx] change in ./src/worker/processor.ts Restarting...
+
+Received SIGTERM. Gracefully stopping worker...
+[Worker] Stopping worker poll loop. Draining active jobs...
+[Worker] Worker shutdown complete.
+🚀 Background Worker started. Concurrency Cap: 5 | Poll Interval: 1000ms
+[Worker] Claimed 5 job(s). Starting concurrent processing...
+[Worker] ⏳ Processing job 01a213b2-0d71-702f-87f4-b6a71858ea6a | Active slots: 1/5
+[Worker] ⏳ Processing job 01a213b2-0d6f-7592-b019-0b87e68073a6 | Active slots: 2/5
+[Worker] ⏳ Processing job 01a213b2-0d6c-77bc-915b-de03e565117f | Active slots: 3/5
+[Worker] ⏳ Processing job 01a213b2-0d73-743d-925e-566918cd95ae | Active slots: 4/5
+[Worker] ⏳ Processing job 01a213b2-0d71-702f-87f4-b2c866f0f480 | Active slots: 5/5
+[Worker] ✅ Job 01a213b2-0d6f-7592-b019-0b87e68073a6 (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213b2-0d73-743d-925e-566918cd95ae (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213b2-0d71-702f-87f4-b6a71858ea6a (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213b2-0d6c-77bc-915b-de03e565117f (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213b2-0d71-702f-87f4-b2c866f0f480 (send_welcome_email) succeeded.
+[Worker] Claimed 5 job(s). Starting concurrent processing...
+[Worker] ⏳ Processing job 01a213b2-0d70-7098-8ca5-34123420998a | Active slots: 1/5
+[Worker] ⏳ Processing job 01a213b2-0d7a-708a-85bc-c7acd883d2ed | Active slots: 2/5
+[Worker] ⏳ Processing job 01a213b2-0d77-759b-8901-222045b749ef | Active slots: 3/5
+[Worker] ⏳ Processing job 01a213b2-0d79-7597-8ee6-8a626aae04b2 | Active slots: 4/5
+[Worker] ⏳ Processing job 01a213b2-0d73-743d-925e-594543f647fd | Active slots: 5/5
+[Worker] ✅ Job 01a213b2-0d70-7098-8ca5-34123420998a (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213b2-0d7a-708a-85bc-c7acd883d2ed (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213b2-0d77-759b-8901-222045b749ef (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213b2-0d73-743d-925e-594543f647fd (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213b2-0d79-7597-8ee6-8a626aae04b2 (send_welcome_email) succeeded.
+[Worker] Claimed 5 job(s). Starting concurrent processing...
+[Worker] ⏳ Processing job 01a213b2-0d82-7003-9c70-1c41198d3990 | Active slots: 1/5
+[Worker] ⏳ Processing job 01a213b2-0d82-7003-9c70-213dafe768f6 | Active slots: 2/5
+[Worker] ⏳ Processing job 01a213b2-0d82-7003-9c70-18f62eb5cfc9 | Active slots: 3/5
+[Worker] ⏳ Processing job 01a213b2-0d7b-766c-9cff-0095b5e73c38 | Active slots: 4/5
+[Worker] ⏳ Processing job 01a213b2-0d7b-766c-9cfe-fe0e9675a63e | Active slots: 5/5
+[Worker] ✅ Job 01a213b2-0d82-7003-9c70-18f62eb5cfc9 (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213b2-0d82-7003-9c70-1c41198d3990 (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213b2-0d82-7003-9c70-213dafe768f6 (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213b2-0d7b-766c-9cfe-fe0e9675a63e (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213b2-0d7b-766c-9cff-0095b5e73c38 (send_welcome_email) succeeded.
+[Worker] Claimed 5 job(s). Starting concurrent processing...
+[Worker] ⏳ Processing job 01a213b2-0d84-76ba-8cf5-c18697f22bd0 | Active slots: 1/5
+[Worker] ⏳ Processing job 01a213b2-0d84-76ba-8cf5-b9af26562ae5 | Active slots: 2/5
+[Worker] ⏳ Processing job 01a213b2-0d84-76ba-8cf5-bee6f8292fc3 | Active slots: 3/5
+[Worker] ⏳ Processing job 01a213b2-0d83-74db-a6ce-58e650fe12d7 | Active slots: 4/5
+[Worker] ⏳ Processing job 01a213b2-0d84-76ba-8cf5-b73b02b45b8c | Active slots: 5/5
+[Worker] ✅ Job 01a213b2-0d83-74db-a6ce-58e650fe12d7 (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213b2-0d84-76ba-8cf5-c18697f22bd0 (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213b2-0d84-76ba-8cf5-b9af26562ae5 (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213b2-0d84-76ba-8cf5-b73b02b45b8c (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213b2-0d84-76ba-8cf5-bee6f8292fc3 (send_welcome_email) succeeded.
+[Worker] Claimed 5 job(s). Starting concurrent processing...
+[Worker] ⏳ Processing job 01a213b2-0d85-77c4-976f-fa4d48b724fa | Active slots: 1/5
+[Worker] ⏳ Processing job 01a213b2-0d85-77c4-976f-fe9331907f0f | Active slots: 2/5
+[Worker] ⏳ Processing job 01a213b2-0d85-77c4-976f-f7054a294620 | Active slots: 3/5
+[Worker] ⏳ Processing job 01a213b2-0d85-77c4-9770-00fc4850316c | Active slots: 4/5
+[Worker] ⏳ Processing job 01a213b2-0d85-77c4-976f-f11f48832d06 | Active slots: 5/5
+[Worker] ✅ Job 01a213b2-0d85-77c4-976f-f7054a294620 (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213b2-0d85-77c4-976f-fe9331907f0f (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213b2-0d85-77c4-976f-fa4d48b724fa (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213b2-0d85-77c4-976f-f11f48832d06 (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213b2-0d85-77c4-9770-00fc4850316c (send_welcome_email) succeeded.
+[Worker] Claimed 5 job(s). Starting concurrent processing...
+[Worker] ⏳ Processing job 01a213b2-0d87-72da-8264-63726d58272f | Active slots: 1/5
+[Worker] ⏳ Processing job 01a213b2-0d87-72da-8264-678ae2058f48 | Active slots: 2/5
+[Worker] ⏳ Processing job 01a213b2-0d86-770b-af4e-ec30c911c51a | Active slots: 3/5
+[Worker] ⏳ Processing job 01a213b2-0d86-770b-af4e-e86c0e7bbc1e | Active slots: 4/5
+[Worker] ⏳ Processing job 01a213b2-0d86-770b-af4e-e6fa24233bb4 | Active slots: 5/5
+[Worker] ✅ Job 01a213b2-0d86-770b-af4e-e86c0e7bbc1e (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213b2-0d87-72da-8264-678ae2058f48 (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213b2-0d86-770b-af4e-ec30c911c51a (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213b2-0d86-770b-af4e-e6fa24233bb4 (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213b2-0d87-72da-8264-63726d58272f (send_welcome_email) succeeded.
+[Worker] Claimed 5 job(s). Starting concurrent processing...
+[Worker] ⏳ Processing job 01a213b2-0d88-7045-b282-02fb067baf7d | Active slots: 1/5
+[Worker] ⏳ Processing job 01a213b2-0d89-756d-85ca-63e1b3f351a8 | Active slots: 2/5
+[Worker] ⏳ Processing job 01a213b2-0d88-7045-b281-fd787bd2be54 | Active slots: 3/5
+[Worker] ⏳ Processing job 01a213b2-0d89-756d-85ca-64f926121b5e | Active slots: 4/5
+[Worker] ⏳ Processing job 01a213b2-0d88-7045-b281-fa3e7ad366a5 | Active slots: 5/5
+[Worker] ✅ Job 01a213b2-0d89-756d-85ca-63e1b3f351a8 (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213b2-0d88-7045-b282-02fb067baf7d (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213b2-0d88-7045-b281-fd787bd2be54 (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213b2-0d89-756d-85ca-64f926121b5e (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213b2-0d88-7045-b281-fa3e7ad366a5 (send_welcome_email) succeeded.
+[Worker] Claimed 5 job(s). Starting concurrent processing...
+[Worker] ⏳ Processing job 01a213b2-0d8d-74d1-8aac-9bb9fe698e12 | Active slots: 1/5
+[Worker] ⏳ Processing job 01a213b2-0d8f-71e9-86b9-276f29e635f3 | Active slots: 2/5
+[Worker] ⏳ Processing job 01a213b2-0d8e-7250-ba19-9a087a844d15 | Active slots: 3/5
+[Worker] ⏳ Processing job 01a213b2-0d8f-71e9-86b9-286fbf1ae6ba | Active slots: 4/5
+[Worker] ⏳ Processing job 01a213b2-0d8f-71e9-86b9-2001a0167148 | Active slots: 5/5
+[Worker] ✅ Job 01a213b2-0d8f-71e9-86b9-286fbf1ae6ba (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213b2-0d8f-71e9-86b9-2001a0167148 (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213b2-0d8e-7250-ba19-9a087a844d15 (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213b2-0d8d-74d1-8aac-9bb9fe698e12 (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213b2-0d8f-71e9-86b9-276f29e635f3 (send_welcome_email) succeeded.
+[Worker] Claimed 5 job(s). Starting concurrent processing...
+[Worker] ⏳ Processing job 01a213b2-0d90-7680-8953-7a117c8e99d4 | Active slots: 1/5
+[Worker] ⏳ Processing job 01a213b2-0d8f-71e9-86b9-2c43ff362f9d | Active slots: 2/5
+[Worker] ⏳ Processing job 01a213b2-0d90-7680-8953-76fea73cf307 | Active slots: 3/5
+[Worker] ⏳ Processing job 01a213b2-0d8f-71e9-86b9-34ec51c3dd1c | Active slots: 4/5
+[Worker] ⏳ Processing job 01a213b2-0d8f-71e9-86b9-3128aad72229 | Active slots: 5/5
+[Worker] ✅ Job 01a213b2-0d90-7680-8953-76fea73cf307 (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213b2-0d8f-71e9-86b9-34ec51c3dd1c (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213b2-0d8f-71e9-86b9-2c43ff362f9d (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213b2-0d8f-71e9-86b9-3128aad72229 (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213b2-0d90-7680-8953-7a117c8e99d4 (send_welcome_email) succeeded.
+[Worker] Claimed 5 job(s). Starting concurrent processing...
+[Worker] ⏳ Processing job 01a213b2-0d90-7680-8953-8540ab81c750 | Active slots: 1/5
+[Worker] ⏳ Processing job 01a213b2-0d90-7680-8953-8aa5f4e9d0b6 | Active slots: 2/5
+[Worker] ⏳ Processing job 01a213b2-0d90-7680-8953-8cbd9194a2b5 | Active slots: 3/5
+[Worker] ⏳ Processing job 01a213b2-0d90-7680-8953-8255ca9b8107 | Active slots: 4/5
+[Worker] ⏳ Processing job 01a213b2-0d90-7680-8953-7eac5405638b | Active slots: 5/5
+[Worker] ✅ Job 01a213b2-0d90-7680-8953-8540ab81c750 (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213b2-0d90-7680-8953-8cbd9194a2b5 (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213b2-0d90-7680-8953-7eac5405638b (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213b2-0d90-7680-8953-8255ca9b8107 (send_welcome_email) succeeded.
+[Worker] ✅ Job 01a213b2-0d90-7680-8953-8aa5f4e9d0b6 (send_welcome_email) succeeded.
+[Worker] Claimed 2 job(s). Starting concurrent processing...
+[Worker] ⏳ Processing job 01a213b2-3118-767e-89e7-e1d6fd8d3216 | Active slots: 1/5
+[Worker] ⏳ Processing job 01a213b2-2f31-71ff-8469-1e47ca0d6258 | Active slots: 2/5
+[Worker] ⚠️ Job 01a213b2-3118-767e-89e7-e1d6fd8d3216 attempt 1/3 failed. Status: 'failed'. Scheduled retry at: 2026-11-25T17:12:58.933Z. Error: Simulated intentional job failure (force_fail = true)
+[Worker] ✅ Job 01a213b2-2f31-71ff-8469-1e47ca0d6258 (order_receipt) succeeded.
+[Worker] Claimed 1 job(s). Starting concurrent processing...
+[Worker] ⏳ Processing job 01a213b2-3118-767e-89e7-e1d6fd8d3216 | Active slots: 1/5
+[Worker] ⚠️ Job 01a213b2-3118-767e-89e7-e1d6fd8d3216 attempt 2/3 failed. Status: 'failed'. Scheduled retry at: 2026-11-25T17:13:04.353Z. Error: Simulated intentional job failure (force_fail = true)
+[Worker] Claimed 1 job(s). Starting concurrent processing...
+[Worker] ⏳ Processing job 01a213b2-3118-767e-89e7-e1d6fd8d3216 | Active slots: 1/5
+[Worker] 💀 Job 01a213b2-3118-767e-89e7-e1d6fd8d3216 exhausted all 3 attempts. Moved to DEAD LETTER queue. Error: Simulated intentional job failure (force_fail = true)
+
+Received SIGTERM. Gracefully stopping worker...
+[Worker] Stopping worker poll loop. Draining active jobs...
+
+Received SIGTERM. Gracefully stopping worker...
+[Worker] Stopping worker poll loop. Draining active jobs...
+/Users/leksyd/Desktop/5 build/t2-job-queue/node_modules/pg-pool/index.js:491
+      const err = new Error('Called end on pool more than once')
+                  ^
+
+Error: Called end on pool more than once
+    at BoundPool.end (/Users/leksyd/Desktop/5 build/t2-job-queue/node_modules/pg-pool/index.js:491:19)
+    at WorkerEngine.stop (/Users/leksyd/Desktop/5 build/t2-job-queue/src/worker/worker.ts:168:21)
+    at shutdown (/Users/leksyd/Desktop/5 build/t2-job-queue/src/worker/index.ts:8:18)
+    at process.<anonymous> (/Users/leksyd/Desktop/5 build/t2-job-queue/src/worker/index.ts:13:31)
+    at process.emit (node:events:521:24)
+    at process.emit (/Users/leksyd/Desktop/5 build/t2-job-queue/node_modules/tsx/dist/suppress-warnings.cjs:1:472)
+
+Node.js v24.16.0
+
+> t2-job-queue@1.0.0 dev:worker
+> tsx watch src/worker/index.ts
+
+🚀 Background Worker started. Concurrency Cap: 5 | Poll Interval: 1000ms
+
+> t2-job-queue@1.0.0 dev:worker
+> tsx watch src/worker/index.ts
+
+🚀 Background Worker started. Concurrency Cap: 5 | Poll Interval: 1000ms
+[Worker] Claimed 5 job(s). Starting concurrent processing...
+[Worker] ⏳ Processing job 01a213b2-e74d-72ab-9a5a-29f7064ea21c | Active slots: 1/5
+[Worker] ⏳ Processing job 01a213b2-e750-7738-8ba0-0adb248e5047 | Active slots: 2/5
+[Worker] ⏳ Processing job 01a213b2-e74e-757e-9069-593615b58986 | Active slots: 3/5
+[Worker] ⏳ Processing job 01a213b2-e750-7738-8ba0-13f2d7eb7237 | Active slots: 4/5
+[Worker] ⏳ Processing job 01a213b2-e74d-72ab-9a5a-2510ffdf5b3e | Active slots: 5/5
+[Worker] ✅ Job 01a213b2-e74d-72ab-9a5a-2510ffdf5b3e (competitive_job) succeeded.
+[Worker] ✅ Job 01a213b2-e74e-757e-9069-593615b58986 (competitive_job) succeeded.
+[Worker] ✅ Job 01a213b2-e750-7738-8ba0-0adb248e5047 (competitive_job) succeeded.
+[Worker] ✅ Job 01a213b2-e750-7738-8ba0-13f2d7eb7237 (competitive_job) succeeded.
+[Worker] ✅ Job 01a213b2-e74d-72ab-9a5a-29f7064ea21c (competitive_job) succeeded.
+[Worker] Claimed 5 job(s). Starting concurrent processing...
+[Worker] ⏳ Processing job 01a213b2-e74a-7268-83e7-0786f5c13263 | Active slots: 1/5
+[Worker] ⏳ Processing job 01a213b2-e752-7234-a43f-0148264b634c | Active slots: 2/5
+[Worker] ⏳ Processing job 01a213b2-e74b-73c8-8e1b-8fc9a1c61d59 | Active slots: 3/5
+[Worker] ⏳ Processing job 01a213b2-e752-7234-a43e-f9fc0546e257 | Active slots: 4/5
+[Worker] ⏳ Processing job 01a213b2-e74e-757e-9069-5e0b8142f0a8 | Active slots: 5/5
+[Worker] ✅ Job 01a213b2-e752-7234-a43f-0148264b634c (competitive_job) succeeded.
+[Worker] ✅ Job 01a213b2-e74a-7268-83e7-0786f5c13263 (competitive_job) succeeded.
+[Worker] ✅ Job 01a213b2-e74e-757e-9069-5e0b8142f0a8 (competitive_job) succeeded.
+[Worker] ✅ Job 01a213b2-e74b-73c8-8e1b-8fc9a1c61d59 (competitive_job) succeeded.
+[Worker] ✅ Job 01a213b2-e752-7234-a43e-f9fc0546e257 (competitive_job) succeeded.
+[Worker] Claimed 5 job(s). Starting concurrent processing...
+[Worker] ⏳ Processing job 01a213b2-e751-719c-b59a-fcb6eb2ad8c0 | Active slots: 1/5
+[Worker] ⏳ Processing job 01a213b2-e749-7360-ad84-f84748037930 | Active slots: 2/5
+[Worker] ⏳ Processing job 01a213b2-e72b-72f9-b737-19ebb3edf0d3 | Active slots: 3/5
+[Worker] ⏳ Processing job 01a213b2-e74c-75aa-94da-16e56626ff92 | Active slots: 4/5
+[Worker] ⏳ Processing job 01a213b2-e74c-75aa-94da-18e7860b833a | Active slots: 5/5
+[Worker] ✅ Job 01a213b2-e72b-72f9-b737-19ebb3edf0d3 (competitive_job) succeeded.
+[Worker] ✅ Job 01a213b2-e751-719c-b59a-fcb6eb2ad8c0 (competitive_job) succeeded.
+[Worker] ✅ Job 01a213b2-e74c-75aa-94da-18e7860b833a (competitive_job) succeeded.
+[Worker] ✅ Job 01a213b2-e749-7360-ad84-f84748037930 (competitive_job) succeeded.
+[Worker] ✅ Job 01a213b2-e74c-75aa-94da-16e56626ff92 (competitive_job) succeeded.
+[Worker] Claimed 5 job(s). Starting concurrent processing...
+[Worker] ⏳ Processing job 01a213b2-e74f-715b-87fd-92fae8bfcd31 | Active slots: 1/5
+[Worker] ⏳ Processing job 01a213b2-e74f-715b-87fd-959ab806b408 | Active slots: 2/5
+[Worker] ⏳ Processing job 01a213b2-e750-7738-8ba0-0ee99bdf2f22 | Active slots: 3/5
+[Worker] ⏳ Processing job 01a213b2-e751-719c-b59b-03407c236b65 | Active slots: 4/5
+[Worker] ⏳ Processing job c8bdb797-a6a5-4731-a1dd-ec3f4efccffe | Active slots: 5/5
+[Worker] ✅ Job c8bdb797-a6a5-4731-a1dd-ec3f4efccffe (kill_test) succeeded.
+[Worker] ✅ Job 01a213b2-e74f-715b-87fd-959ab806b408 (competitive_job) succeeded.
+[Worker] ✅ Job 01a213b2-e751-719c-b59b-03407c236b65 (competitive_job) succeeded.
+[Worker] ✅ Job 01a213b2-e750-7738-8ba0-0ee99bdf2f22 (competitive_job) succeeded.
+[Worker] ✅ Job 01a213b2-e74f-715b-87fd-92fae8bfcd31 (competitive_job) succeeded.
+[Worker] Claimed 1 job(s). Starting concurrent processing...
+[Worker] ⏳ Processing job 01a213b2-e752-7234-a43e-fe3750be2fdb | Active slots: 1/5
+[Worker] ✅ Job 01a213b2-e752-7234-a43e-fe3750be2fdb (competitive_job) succeeded.

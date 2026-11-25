@@ -1,0 +1,7 @@
+2026-11-25T17:17:12Z DEAD_RETRY
+BEFORE: 01a213b2-3118-767e-89e7-e1d6fd8d3216
+dead
+POST /api/dead-letters/:id/retry
+{"data":{"id":"01a213b2-3118-767e-89e7-e1d6fd8d3216","type":"failing_email","payload":{"to":"fail@example.com","force_fail":true},"status":"pending","attempts":0,"max_attempts":3,"last_error":null,"run_at":"2026-11-25T17:17:12.460Z","started_at":null,"finished_at":null,"idempotency_key":"failing_job_1795626774775","created_at":"2026-11-25T17:12:54.809Z","updated_at":"2026-11-25T17:17:12.460Z"}}
+AFTER:
+pending attempts=0

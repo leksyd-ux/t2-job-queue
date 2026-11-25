@@ -1,0 +1,15 @@
+
+> t2-job-queue@1.0.0 break:duplicate
+> tsx scripts/break-duplicate.ts
+
+==================================================
+BREAK-IT 3: IDEMPOTENT ENQUEUE & DUPLICATE DEDUPLICATION
+==================================================
+Sending first POST /api/jobs with key: shared_idempotency_key_1795626774286...
+First Request Result: Status=202, ID=01a213b2-2f31-71ff-8469-1e47ca0d6258, isDuplicate=false
+Sending second POST /api/jobs with identical key: shared_idempotency_key_1795626774286...
+Second Request Result: Status=202, ID=01a213b2-2f31-71ff-8469-1e47ca0d6258, isDuplicate=true
+==================================================
+✅ PASS: Exactly one job was created. Second request safely returned the existing job.
+Job ID: 01a213b2-2f31-71ff-8469-1e47ca0d6258
+==================================================

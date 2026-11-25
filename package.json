@@ -1,0 +1,56 @@
+{
+  "name": "t2-job-queue",
+  "version": "1.0.0",
+  "description": "Task 2 — Background Jobs Done Properly (PostgreSQL atomic claim with FOR UPDATE SKIP LOCKED, exponential backoff, worker & sweep processes, console)",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/api/server.ts",
+    "dev:worker": "tsx watch src/worker/index.ts",
+    "dev:sweep": "tsx watch src/sweep/index.ts",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "start": "node dist/src/api/server.js",
+    "worker": "node dist/src/worker/index.js",
+    "sweep": "node dist/src/sweep/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "migrate": "tsx scripts/migrate.ts",
+    "break:concurrency": "tsx scripts/break-concurrency.ts",
+    "break:failure": "tsx scripts/break-failure.ts",
+    "break:duplicate": "tsx scripts/break-duplicate.ts",
+    "break:two-workers": "tsx scripts/break-two-workers.ts"
+  },
+  "keywords": [
+    "job-queue",
+    "fastify",
+    "typescript",
+    "postgres",
+    "skip-locked",
+    "bootcamp"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@fastify/cors": "^10.0.2",
+    "@fastify/rate-limit": "^10.2.2",
+    "dotenv": "^16.4.7",
+    "fastify": "^5.2.1",
+    "fastify-plugin": "^5.0.1",
+    "pg": "^8.13.3",
+    "uuid": "^11.1.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "@faker-js/faker": "^9.5.0",
+    "@types/node": "^22.13.5",
+    "@types/pg": "^8.11.11",
+    "@types/uuid": "^10.0.0",
+    "eslint": "^9.39.5",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.74.0",
+    "vitest": "^3.0.6"
+  }
+}

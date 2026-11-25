@@ -1,0 +1,35 @@
+
+> t2-job-queue@1.0.0 break:concurrency
+> tsx scripts/break-concurrency.ts
+
+==================================================
+BREAK-IT 1: CONCURRENCY CAP ENFORCEMENT
+Expected Cap: 5 concurrent jobs
+==================================================
+Enqueuing 50 background jobs...
+Enqueued 50 jobs successfully. Monitoring processing cap...
+Poll #1: Processing=0/5 | Pending=50 | Succeeded=51
+Poll #2: Processing=0/5 | Pending=50 | Succeeded=51
+Poll #3: Processing=0/5 | Pending=50 | Succeeded=51
+Poll #4: Processing=0/5 | Pending=45 | Succeeded=56
+Poll #5: Processing=0/5 | Pending=45 | Succeeded=56
+Poll #6: Processing=5/5 | Pending=40 | Succeeded=56
+Poll #7: Processing=0/5 | Pending=40 | Succeeded=61
+Poll #8: Processing=0/5 | Pending=40 | Succeeded=61
+Poll #9: Processing=0/5 | Pending=35 | Succeeded=66
+Poll #10: Processing=0/5 | Pending=35 | Succeeded=66
+Poll #11: Processing=5/5 | Pending=30 | Succeeded=66
+Poll #12: Processing=0/5 | Pending=30 | Succeeded=71
+Poll #13: Processing=0/5 | Pending=30 | Succeeded=71
+Poll #14: Processing=0/5 | Pending=25 | Succeeded=76
+Poll #15: Processing=0/5 | Pending=25 | Succeeded=76
+Poll #16: Processing=5/5 | Pending=20 | Succeeded=76
+Poll #17: Processing=0/5 | Pending=20 | Succeeded=81
+Poll #18: Processing=0/5 | Pending=20 | Succeeded=81
+Poll #19: Processing=0/5 | Pending=15 | Succeeded=86
+Poll #20: Processing=0/5 | Pending=15 | Succeeded=86
+==================================================
+Max Observed Concurrent Jobs: 5
+Worker Concurrency Cap:       5
+✅ PASS: Concurrency cap held strictly at all times.
+==================================================

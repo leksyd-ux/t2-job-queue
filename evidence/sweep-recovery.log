@@ -1,0 +1,30 @@
+
+> t2-job-queue@1.0.0 dev:sweep
+> tsx watch src/sweep/index.ts
+
+🧹 Sweep Engine started. Threshold: 5000ms | Check Interval: 2500ms
+[Sweep] 🧹 Recovered stuck job 01a213b2-e74d-72ab-9a5a-29f7064ea21c. Incremented attempts to 1/5. New status: 'pending'.
+[Sweep] 🧹 Recovered stuck job 01a213b2-e74e-757e-9069-593615b58986. Incremented attempts to 1/5. New status: 'pending'.
+[Sweep] 🧹 Recovered stuck job 01a213b2-e74d-72ab-9a5a-2510ffdf5b3e. Incremented attempts to 1/5. New status: 'pending'.
+[Sweep] 🧹 Recovered stuck job 01a213b2-e750-7738-8ba0-0adb248e5047. Incremented attempts to 1/5. New status: 'pending'.
+[Sweep] 🧹 Recovered stuck job 01a213b2-e750-7738-8ba0-13f2d7eb7237. Incremented attempts to 1/5. New status: 'pending'.
+[Sweep] 🧹 Recovered stuck job 01a213b2-e752-7234-a43f-0148264b634c. Incremented attempts to 1/5. New status: 'pending'.
+[Sweep] 🧹 Recovered stuck job 01a213b2-e752-7234-a43e-f9fc0546e257. Incremented attempts to 1/5. New status: 'pending'.
+[Sweep] 🧹 Recovered stuck job 01a213b2-e74f-715b-87fd-92fae8bfcd31. Incremented attempts to 1/5. New status: 'pending'.
+[Sweep] 🧹 Recovered stuck job 01a213b2-e74f-715b-87fd-959ab806b408. Incremented attempts to 1/5. New status: 'pending'.
+[Sweep] 🧹 Recovered stuck job 01a213b2-e751-719c-b59b-03407c236b65. Incremented attempts to 1/5. New status: 'pending'.
+[Sweep] 🧹 Recovered stuck job 01a213b2-e750-7738-8ba0-0ee99bdf2f22. Incremented attempts to 1/5. New status: 'pending'.
+[Sweep] 🧹 Recovered stuck job 01a213b2-e752-7234-a43e-fe3750be2fdb. Incremented attempts to 1/5. New status: 'pending'.
+[Sweep] 🧹 Recovered stuck job 01a213b2-e74a-7268-83e7-0786f5c13263. Incremented attempts to 1/5. New status: 'pending'.
+[Sweep] 🧹 Recovered stuck job 01a213b2-e74b-73c8-8e1b-8fc9a1c61d59. Incremented attempts to 1/5. New status: 'pending'.
+[Sweep] 🧹 Recovered stuck job 01a213b2-e74e-757e-9069-5e0b8142f0a8. Incremented attempts to 1/5. New status: 'pending'.
+[Sweep] 🧹 Recovered stuck job 01a213b2-e749-7360-ad84-f84748037930. Incremented attempts to 1/5. New status: 'pending'.
+[Sweep] 🧹 Recovered stuck job 01a213b2-e74c-75aa-94da-18e7860b833a. Incremented attempts to 1/5. New status: 'pending'.
+[Sweep] 🧹 Recovered stuck job 01a213b2-e74c-75aa-94da-16e56626ff92. Incremented attempts to 1/5. New status: 'pending'.
+[Sweep] 🧹 Recovered stuck job 01a213b2-e72b-72f9-b737-19ebb3edf0d3. Incremented attempts to 1/5. New status: 'pending'.
+[Sweep] 🧹 Recovered stuck job 01a213b2-e751-719c-b59a-fcb6eb2ad8c0. Incremented attempts to 1/5. New status: 'pending'.
+[Sweep] 🧹 Recovered stuck job c8bdb797-a6a5-4731-a1dd-ec3f4efccffe. Incremented attempts to 2/5. New status: 'pending'.
+[Sweep] Swept 21 orphaned job(s).
+
+Received SIGTERM. Gracefully stopping sweep engine...
+[Sweep] Sweep engine stopped.

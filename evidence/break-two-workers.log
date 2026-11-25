@@ -1,0 +1,17 @@
+
+> t2-job-queue@1.0.0 break:two-workers
+> tsx scripts/break-two-workers.ts
+
+==================================================
+BREAK-IT 4: TWO CONCURRENT WORKERS (SKIP LOCKED CHECK)
+Proving: No double-claims when two workers compete
+==================================================
+Seeding 20 pending jobs for competitive claiming...
+Simulating simultaneous claims from Worker 1 and Worker 2...
+Worker 1 claimed: 10 job(s)
+Worker 2 claimed: 10 job(s)
+==================================================
+✅ PASS: Zero duplicate claims detected.
+Total uniquely claimed: 20 / 20
+PostgreSQL FOR UPDATE SKIP LOCKED successfully isolated each worker transaction.
+==================================================
